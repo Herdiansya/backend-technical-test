@@ -7,7 +7,6 @@ function register() {
     const accessToken = sessionStorage.getItem("access_token");
 
     if (accessToken) {
-      // If an access token is found, force logout and show the login form
       logout();
     }
   });
@@ -31,27 +30,6 @@ function register() {
       console.error("Error:", error);
     });
 }
-
-// function login() {
-//   var username = document.getElementById("login-username").value;
-//   var password = document.getElementById("login-password").value;
-
-//   fetch("/login", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify({
-//       username: username,
-//       password: password,
-//     }),
-//   })
-//     .then((response) => response.json())
-//     .then((data) => {
-//       alert(data.message);
-//     });
-//   // Store the access token in a secure way
-// }
 
 function login() {
   var username = document.getElementById("login-username").value;
@@ -77,14 +55,10 @@ function login() {
     .then((data) => {
       alert(data.message);
 
-      // Assuming the server responds with an 'access_token' field in the JSON data
       const accessToken = data.access_token;
 
-      // Save the access token securely (you might use localStorage, sessionStorage, or cookies)
-      // For simplicity, storing it in sessionStorage in this example
       sessionStorage.setItem("access_token", accessToken);
 
-      // Call getResource() immediately after successful login
       getResource();
     })
     .catch((error) => {
@@ -93,13 +67,12 @@ function login() {
 }
 
 function getResource() {
-  // Fetch the protected resource using the stored access token
   const accessToken = sessionStorage.getItem("access_token");
 
   if (!accessToken) {
     console.error("Access token not found");
-    // If no access token is found, redirect to the login page
-    window.location.href = "/"; // Update the URL to your login page
+
+    window.location.href = "/";
     return;
   }
 
@@ -126,20 +99,16 @@ function getResource() {
 }
 
 function logout() {
-  // Check if the user is logged in
   const accessToken = sessionStorage.getItem("access_token");
 
   if (accessToken) {
-    // Clear the stored access token
     sessionStorage.removeItem("access_token");
     alert("Logged out successfully");
 
-    // Update the UI
     document.getElementById("login-form").classList.remove("hidden");
     document.getElementById("protected-resource").classList.add("hidden");
     document.getElementById("logout").classList.add("hidden");
   } else {
-    // If the user is already logged out, you can handle it accordingly
     console.warn("User is already logged out");
   }
 }
