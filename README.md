@@ -4,10 +4,9 @@ Disini saya menggunakan flask, flask-cors, flask-sqlalchemy, werkzeug dan html, 
 Tantangan yang saya hadapi adalah tentang masalah autentikasi token yang masih belum faham dan penulisan syntax yng sering lupa dan harus lihat Documentasi.
 
 
-Di bawah ini adalah link penjelasan tentang Restful using python yang membuat saya terpikirkan ide desain
-https://youtu.be/L8tl7Sgbe2M?si=LL0ofrNDbC_bmYRh
-https://youtu.be/857p1srA1Yw?si=3hvgb4iklvD32kvK
-https://youtu.be/0sOvCWFmrtA?si=MWvRuLANYWrScczo
+Di bawah ini adalah link video orangnya yang membuat saya terpikirkan ide desain
+https://youtu.be/857p1srA1Yw?si=3hvgb4iklvD32kvK, 
+https://youtu.be/L8tl7Sgbe2M?si=0c0u8UJaq66Onl71
 
 
 # Cara menjalankan aplikasi
