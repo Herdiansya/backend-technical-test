@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <title>Login and Register</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Backend Technical Test</div>
+      </div>
+    </nav>  
+    <div class="container">
+      <div id="register-form" class="form-container">
+        <h2>Register</h2>
+        <input type="text" id="register-username" placeholder="Username" />
+        <input type="email" id="register-email" placeholder="Email" />
+        <input type="password" id="register-password" placeholder="Password" />
+        <button onclick="register()">Register</button>
+      </div>
+
+      <div id="login-form" class="form-container">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username" />
+        <input type="password" id="login-password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+      </div>
+
+      <div id="protected-resource" class="form-container">
+        <h2>Protected Resource</h2>
+        <button onclick="getResource()">Get Resource</button>
+      </div>
+
+      <div id="logout" class="form-container hidden">
+        <h2>Logout</h2>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
