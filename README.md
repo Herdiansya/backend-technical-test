@@ -1,6 +1,6 @@
 # backend-technical-test
 Keputusan saya untuk menggunakan desain tersebut karena saya dulu pernah melihat seseorang sedang mengerjakan projek yg sama yaitu membuat Restful untuk keperluan login, register, dll
-Disini saya menggunakan flask, flask-cors, flask-sqlalchemy, werkzeug dan html, css, javascript untuk frontendnya.
+Disini saya menggunakan flask, flask-cors, flask-sqlalchemy, werkzeug dan html, css, javascript untuk frontendnya dan sqlite sebagai databasenya.
 Tantangan yang saya hadapi adalah tentang masalah autentikasi token yang masih belum faham dan penulisan syntax yng sering lupa dan harus lihat Documentasi.
 
 
@@ -21,6 +21,6 @@ https://youtu.be/0sOvCWFmrtA?si=MWvRuLANYWrScczo
    3. flask-sqlalchemy
    4. Flask-JWT-Extended
    5. werkzeug
-6. Setelah diinstll Set the FLASK_APP environment variable
+6. Setelah diinstll Set the FLASK_APP virtual environment
 7. cara set "set FLASK_APP=app.py"
-8. lalu tinggal kita jalankan "flask run"
+8. lalu tinggal kita jalankan caranya dengan ketik "flask run"
