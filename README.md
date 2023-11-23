@@ -10,7 +10,7 @@ https://youtu.be/L8tl7Sgbe2M?si=0c0u8UJaq66Onl71
 
 
 # Cara menjalankan aplikasi
-1. Download repo ini
+1. Download repo ini / file zipnya
 2. Ekstrak dan buka filenya di VS Code
 3. Setelah dibuka akan ada error atau garis bawah warna kuning itu kita disuruh buat environment variable baru
 4. Setelah selesai membuat virtual environtment, masuk kedalamnya dan install beberapa dependencies
