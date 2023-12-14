@@ -22,6 +22,4 @@ https://youtu.be/0sOvCWFmrtA?si=MWvRuLANYWrScczo
    5. werkzeug
 5. lalu tinggal kita jalankan caranya dengan ketik "flask run".
 6. Atau bisa buat env baru terlebih dahulu setelah itu install dependencies didalam env/engine baru tersebut kalau misal komputernya tidak mau terinstall dependencies di atas.
-7. Setelah diinstall Set FLASK_APP virtual environment.
-8. cara set "set FLASK_APP=app.py".
-9. Sekian terima kasih.
+7. Sekian terima kasih.
